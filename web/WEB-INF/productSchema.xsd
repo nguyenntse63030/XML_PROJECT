@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="sanPham" type="SanPham"/>
+    <xs:complexType name="SanPham">
+        <xs:sequence>
+            <xs:element name="tenSanPham" type="xs:string"/>
+            <xs:element name="maSanPham" type="xs:string"/>
+            <xs:element name="donGia" type="xs:int"/>
+            <xs:element name="chiTiet" type="xs:string"/>
+            <xs:element name="photoURL" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
